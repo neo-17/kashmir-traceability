@@ -17,6 +17,7 @@ const port = process.env.PORT || 5000;
 connectDB();
 
 // Middleware
+// Allow requests from your frontend URL
 app.use(cors());
 app.use(express.json());
 
