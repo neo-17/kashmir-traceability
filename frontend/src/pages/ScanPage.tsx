@@ -56,7 +56,7 @@
 
 // //   const fetchProductByCode = async (qrCode: string) => {
 // //     try {
-// //       const res = await axios.get(`http://localhost:5000/api/products/qr/${qrCode}`);
+// //       const res = await axios.get(`http://kashmir-traceability-backend.vercel.app/api/products/qr/${qrCode}`);
 // //       setProduct(res.data.product);
 // //       setQr(res.data.qrCode);
 // //       setLoading(false);
@@ -79,7 +79,7 @@
 // //       return;
 // //     }
 // //     try {
-// //       const res = await axios.post('http://localhost:5000/api/users/register', {
+// //       const res = await axios.post('http://kashmir-traceability-backend.vercel.app/api/users/register', {
 // //         username,
 // //         pin,
 // //       });
@@ -213,7 +213,7 @@
 
 //   const fetchProductByCode = async (qrCode: string) => {
 //     try {
-//       const res = await axios.get(`http://localhost:5000/api/products/qr/${qrCode}`);
+//       const res = await axios.get(`http://kashmir-traceability-backend.vercel.app/api/products/qr/${qrCode}`);
 //       setProduct(res.data.product);
 //       setQr(res.data.qrCode);
 //       setLoading(false);
@@ -229,7 +229,7 @@
 //       return;
 //     }
 //     try {
-//       const res = await axios.post('http://localhost:5000/api/users/register', {
+//       const res = await axios.post('http://kashmir-traceability-backend.vercel.app/api/users/register', {
 //         username,
 //         pin,
 //       });
@@ -404,7 +404,7 @@ const ScanPage = () => {
 
   const fetchProductByCode = async (qrCode: any) => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/products/qr/${qrCode}`);
+      const res = await axios.get(`http://kashmir-traceability-backend.vercel.app/api/products/qr/${qrCode}`);
       console.log('Response:', res.data);
       setProduct(res.data.product);
       setLoading(false);
@@ -420,7 +420,7 @@ const ScanPage = () => {
       return;
     }
     try {
-      const res = await axios.post('http://localhost:5000/api/users/register', {
+      const res = await axios.post('http://kashmir-traceability-backend.vercel.app/api/users/register', {
         username,
         pin,
       });

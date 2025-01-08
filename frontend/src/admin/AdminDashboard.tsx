@@ -93,7 +93,7 @@
 
 //   const fetchAdmins = async () => {
 //     try {
-//       const res = await axios.get('http://localhost:5000/api/admin/all');
+//       const res = await axios.get('http://kashmir-traceability-backend.vercel.app/api/admin/all');
 //       setAdmins(res.data);
       
 //       // Find current admin from the token
@@ -116,7 +116,7 @@
 //   const handleAddAdmin = async (e: React.FormEvent) => {
 //     e.preventDefault();
 //     try {
-//       await axios.post('http://localhost:5000/api/admin/add', newAdmin);
+//       await axios.post('http://kashmir-traceability-backend.vercel.app/api/admin/add', newAdmin);
 //       setNewAdmin({ email: '', username: '', pin: '' });
 //       setShowAdminDialog(false);
 //       await fetchAdmins();
@@ -138,7 +138,7 @@
 //     }
 
 //     try {
-//       await axios.delete(`http://localhost:5000/api/admin/remove/${adminId}`);
+//       await axios.delete(`http://kashmir-traceability-backend.vercel.app/api/admin/remove/${adminId}`);
 //       await fetchAdmins();
 //     } catch (error) {
 //       setError('Failed to remove admin');
@@ -151,7 +151,7 @@
 //     try {
 //       setIsLoading(true);
 //       setError(null);
-//       const res = await axios.get('http://localhost:5000/api/products');
+//       const res = await axios.get('http://kashmir-traceability-backend.vercel.app/api/products');
 //       setProducts(res.data);
 //     } catch (error) {
 //       setError('Failed to fetch products. Please try again later.');
@@ -164,7 +164,7 @@
 //   const createProduct = async (productData: Omit<Product, '_id'>) => {
 //     try {
 //       setError(null);
-//       const res = await axios.post('http://localhost:5000/api/products', productData);
+//       const res = await axios.post('http://kashmir-traceability-backend.vercel.app/api/products', productData);
 //       setProducts((prev) => [...prev, res.data]);
 //       setShowForm(false); // Hide form after successful creation
 //     } catch (error) {
@@ -176,7 +176,7 @@
 //   const deleteProduct = async (id: string) => {
 //     try {
 //       setError(null);
-//       await axios.delete(`http://localhost:5000/api/products/${id}`);
+//       await axios.delete(`http://kashmir-traceability-backend.vercel.app/api/products/${id}`);
 //       setProducts((prev) => prev.filter((p) => p._id !== id));
 //     } catch (error) {
 //       setError('Failed to delete product. Please try again.');
@@ -187,7 +187,7 @@
 //   const deployContract = async (id: string) => {
 //     try {
 //       setError(null);
-//       const res = await axios.post(`http://localhost:5000/api/products/${id}/deployContract`);
+//       const res = await axios.post(`http://kashmir-traceability-backend.vercel.app/api/products/${id}/deployContract`);
 //       setProducts((prev) =>
 //         prev.map((p) =>
 //           p._id === id ? { ...p, contractAddress: res.data.contractAddress } : p
@@ -203,7 +203,7 @@
 //     try {
 //       setError(null);
 //       const res = await axios.post(
-//         `http://localhost:5000/api/products/${productId}/generate-qr`
+//         `http://kashmir-traceability-backend.vercel.app/api/products/${productId}/generate-qr`
 //       );
 //       await fetchProducts();
 //       return res.data.message;
