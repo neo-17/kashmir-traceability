@@ -32,7 +32,7 @@ const MintNFTButton: React.FC<MintProps> = ({ productId, userAddress, code, onSu
       setError(null);
 
       const response = await axios.post(
-        'http://localhost:5000/api/nft/mint',
+        'http://kashmir-traceability-backend.vercel.app/api/nft/mint',
         { productId, userAddress, code },
         {
           headers: {

@@ -110,7 +110,7 @@
 //                     product.qrCodes.map((qr) => (
 //                       <div key={qr.code}>
 //                         <a
-//                           href={`http://localhost:5000/api/products/qr-image/${qr.code}`}
+//                           href={`http://kashmir-traceability-backend.vercel.app/api/products/qr-image/${qr.code}`}
 //                           target="_blank"
 //                           rel="noreferrer"
 //                           className="text-blue-500 underline"
@@ -341,7 +341,7 @@
 //                               {qr.claimed ? 'Claimed' : 'Unclaimed'}
 //                             </Badge>
 //                             <a
-//                               href={`http://localhost:5000/api/products/qr-image/${qr.code}`}
+//                               href={`http://kashmir-traceability-backend.vercel.app/api/products/qr-image/${qr.code}`}
 //                               target="_blank"
 //                               rel="noreferrer"
 //                               className="text-blue-500 hover:text-blue-700"
@@ -599,7 +599,7 @@ const ProductList: React.FC<ProductListProps> = ({
                       {qr.claimed ? 'Claimed' : 'Unclaimed'}
                     </Badge>
                     <a
-                      href={`http://localhost:5000/api/products/qr-image/${qr.code}`}
+                      href={`http://kashmir-traceability-backend.vercel.app/api/products/qr-image/${qr.code}`}
                       target="_blank"
                       rel="noreferrer"
                       className="text-blue-500 hover:text-blue-700"
